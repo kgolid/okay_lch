@@ -1,5 +1,5 @@
 export function colors_scale(cs: number[][], steps: number) {
-  let scale: number[][] = [cs[0]];
+  let scale = [cs[0]];
   for (let i = 0; i < cs.length - 1; i++) {
     let c_scale = color_scale(cs[i], cs[i + 1], steps);
     scale = scale.concat(c_scale.slice(1));
